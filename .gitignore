@@ -1,0 +1,4 @@
+keys.config
+__pycache__
+.vscode
+lightning_logs
