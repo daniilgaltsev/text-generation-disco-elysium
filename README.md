@@ -1,4 +1,4 @@
-# Neural Style Transfer
+# Text Generation
 
 
 ## Setup

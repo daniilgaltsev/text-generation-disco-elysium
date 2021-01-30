@@ -1,1 +1,10 @@
 name: text-generation-disco-elysium
+channels:
+  - defaults
+dependencies:
+  - python=3.7
+  - cudatoolkit=11.0
+  - openssl
+  - pip
+  - pip:
+    - pip-tools

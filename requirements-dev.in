@@ -1,4 +1,6 @@
 numpy
 torch==1.7.1+cu110
+transformers
 pytorch-lightning
+matplotlib
 ipdb

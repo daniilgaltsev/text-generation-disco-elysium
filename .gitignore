@@ -1,4 +1,8 @@
-keys.config
 __pycache__
-.vscode
+.ipynb_checkpoints
 lightning_logs
+
+text_generation/weights/*
+!.gitkeep
+
+.vscode
