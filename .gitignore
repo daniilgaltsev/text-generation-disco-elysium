@@ -2,6 +2,7 @@ __pycache__
 .ipynb_checkpoints
 lightning_logs
 
+text_generation/data/generated.txt
 text_generation/weights/*
 !.gitkeep
 

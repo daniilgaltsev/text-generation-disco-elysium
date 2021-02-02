@@ -2,6 +2,10 @@ import transformers
 import random
 import torch
 import numpy as np
+import os
+
+
+WEIGHTS_PATH = os.path.realpath(os.path.join(os.path.dirname(__file__), "weights"))
 
 
 def set_seed(seed: int) -> None:

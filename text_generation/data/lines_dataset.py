@@ -32,7 +32,7 @@ class LinesDataset(torch.utils.data.Dataset):
 
 
     def __len__(self) -> int:
-        return 16#len(self.lines)
+        return len(self.lines)
 
     def __getitem__(self, idx: int) -> str:
         return self.bos_token + self.lines[idx] + self.eos_token

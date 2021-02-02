@@ -6,7 +6,9 @@ import pytorch_lightning as pl
 from typing import Optional
 import os
 
+
 SAVE_PATH = os.path.realpath(os.path.join(os.path.dirname(__file__), "..", "weights"))
+
 
 def finetune(
     batch_size: int,
