@@ -1,0 +1,1 @@
+If you want to use your own text for finetuning, just replace the `texts_extracted.txt` file.

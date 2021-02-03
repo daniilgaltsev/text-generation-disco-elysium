@@ -129,7 +129,7 @@ def parse_args() -> argparse.Namespace:
         "--num_workers",
         type=int,
         default=0,
-        help="A number of workers to use for data preprocessing (recommend 0, becuase tokenizer is already parallel and is fast enough)."
+        help="A number of workers to use for data preprocessing (recommend 0, because tokenizer is already parallel and is fast enough)."
     )
     group.add_argument(
         "--not_save_model",
