@@ -1,5 +1,6 @@
 import importlib
 from text_generation.models.gpt2_lm import GPT2LMHeadModel
+from text_generation.text_generator import TextGenerator
 import text_generation.utils
 import transformers
 import argparse
@@ -57,13 +58,8 @@ def load_model() -> Tuple[transformers.PreTrainedTokenizerBase, GPT2LMHeadModel]
 
 
 def generate(args: argparse.Namespace, write_to_file: bool = True) -> List[str]:
-    tokenizer, model = load_model()
-
-    prompts = [""] * args.n_sequences
-    generated = model.generate(prompts, max_length=args.max_length_token)
-
-    for idx, seq in enumerate(generated):
-        generated[idx] = seq[:args.max_length_char]
+    generator = TextGenerator()
+    generated = generator.generate(args.n_sequences, args.max_length_token, args.max_length_char)
 
     if args.print:
         for i in range(len(generated)):
